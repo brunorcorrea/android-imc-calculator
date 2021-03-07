@@ -2,6 +2,7 @@ package com.example.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -36,21 +37,27 @@ public class imcCalculator extends AppCompatActivity {
 
         if(!Float.isNaN(resultado)){
             if (resultado < 18.5) {
+                imcResult.setTextColor(Color.rgb(180,20,20));
                 imcResult.setText(R.string.abaixo_do_peso);
             }
             else if ((resultado >= 18.5) && (resultado < 25)){
+                imcResult.setTextColor(Color.rgb(55,221,47));
                 imcResult.setText(R.string.peso_correto);
             }
             else if ((resultado >= 25) && (resultado < 30)){
+                imcResult.setTextColor(Color.rgb(241,199,27));
                 imcResult.setText(R.string.acima);
             }
             else if ((resultado >= 30) && (resultado < 35)){
+                imcResult.setTextColor(Color.rgb(243,139,24));
                 imcResult.setText(R.string.obesidade1);
             }
             else if ((resultado >= 35) && (resultado < 40)){
+                imcResult.setTextColor(Color.rgb(203,96,65));
                 imcResult.setText(R.string.obesidade2);
             }
             else {
+                imcResult.setTextColor(Color.rgb(200,10,10));
                 imcResult.setText(R.string.obesidade_morbida);
             }
         }

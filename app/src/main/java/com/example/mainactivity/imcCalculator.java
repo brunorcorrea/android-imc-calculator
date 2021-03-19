@@ -1,3 +1,8 @@
+/* Bruno Ricardo Corrêa RA:19118
+*  Esse é o original!
+*/
+
+
 package com.example.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,8 +12,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import static java.lang.Float.NaN;
 
 public class imcCalculator extends AppCompatActivity {
 

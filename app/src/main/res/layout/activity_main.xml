@@ -14,8 +14,9 @@
         android:layout_marginTop="65dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="312dp"
-        android:text="@string/calcule_o_imc"
+        android:fontFamily="monospace"
         android:onClick="btnCalcularOnClick"
+        android:text="@string/calcule_o_imc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,13 +48,14 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="35dp"
         android:ems="10"
+        android:fontFamily="monospace"
         android:hint="@string/informe_o_peso"
+        android:importantForAutofill="no"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/alturaInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/alturaInput"
@@ -64,12 +66,13 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="65dp"
         android:ems="10"
+        android:fontFamily="monospace"
         android:hint="@string/informe_a_altura"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pesoInput"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/pesoInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
